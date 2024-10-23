@@ -155,7 +155,7 @@ h2 {
 }
 
 /* Responsive Design */
-@media (max-width: 768px) {
+@media (max-width: 768px) and (min-width: 480px){
     .container {
         width: 95%;
     }
@@ -170,11 +170,11 @@ h2 {
 
 @media (max-width: 480px) {
     #product-list {
-        grid-template-columns: 1fr; /* 1 card per row on mobile */
+        grid-template-columns: repeat(2, 1fr); /* 1 card per row on mobile */
     }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1024px) and (min-width: 768px) {
     #product-list {
         grid-template-columns: repeat(3, 1fr); /* 3 cards per row on medium screens */
     }
